@@ -1,8 +1,10 @@
 import { writable } from "svelte/store";
 import  axios  from "axios"; 
 export const showDashboar = writable(true);
+export const showEncuata = writable(true);
+export const showCreateEncuesta = writable(true);
+export const shoCapiule = writable(true);
 export const axiosTools = axios.create({
-
        baseURL: 'http://localhost:8080/',
      })
      axiosTools.interceptors.request.use((config) => {
